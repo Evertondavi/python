@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Revista Mackenzie Digital 100</title>
+ <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+ <!-- Animate -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+ <!-- Folha de estilos -->
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+ <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+	<style>
+  p.sumario-titulo {
+   color:#a00000;
+  }
+  p.sumario-titulo.editoriais {
+   font-size:1.25rem;
+   line-height: 1.25;
+   margin-top:.5rem;
+  }
+  p.texto-sumario.editoriais {
+   font-size:.95rem;
+  }
+  
+		#kenburnsContainer {
+			overflow: hidden;
+			height:312px;
+		}
+		@keyframes kenburns {
+			0% {
+				opacity: 0;
+			}
+			10% {
+				opacity: 1;
+			}
+			100% {
+				transform: scale3d(1.5, 1.5, 1.5) translate3d(70px, -20px, 0px);
+				animation-timing-function: ease-in;
+				opacity: 1;
+			}
+		}
+		#kenburnsContainer img {
+			animation: kenburns 10s forwards;
+		}
+		.kenburnsOuter {
+			--animate-duration:3s;
+			height:312px;
+			width:auto;
+		}
+		@media (max-width: 479.98px) {
+			#kenburnsContainer {
+				overflow: hidden;
+				height:200px;
+			}
+			@keyframes kenburns {
+				0% {
+					opacity: 0;
+				}
+				10% {
+					opacity: 1;
+				}
+				100% {
+					transform: scale3d(2, 2, 2) translate3d(60px, 30px, 150px);
+					animation-timing-function: ease-in;
+					opacity: 1;
+				}
+			}
+			.kenburnsOuter {
+				height:200px;
+			}
+  }
+</style>
+</head>
+<body>
+  <nav id="barra-de-navegacao" class="navbar navbar-expand-sm bg-black fixed-top">
+   <div class="container-fluid px-0">
+    <a class="navbar-button" href="sumario.html"><div id="icone-navegacao-conteudo" class="nav-icon"></div><span class="navegacao-rotulo">Conteúdo desta edição</span></a>
+    <a id= "botao-mackenzie" class="navbar-button" href="http://mackenzie.br"><div id="icone-navegacao-mackenzie" class="nav-icon"></div></a>
+    <a class="navbar-button ms-sm-auto" href="capa.html"><div id="icone-navegacao-anterior" class="nav-icon"></div><span class="navegacao-rotulo">Página anterior</span></a>
+    <a class="navbar-button" href="ed-marketing.html"><span class="navegacao-rotulo">Próxima página</span><div id="icone-navegacao-posterior" class="nav-icon"></div></a>
+   </div>
+  </nav>
+
+
+ <div class="container-fluid bg-white">
+
+  <!--FOTO DE ABERTURA-->
+  <div class="row flex-md-row">
+   <div class="col-12 px-0 overflow-hidden position-relative">
+    <div class="kenburnsOuter animate__animated animate__fadeInDownBig">
+    <div id="kenburnsContainer">
+					<picture>
+						<source srcset="assets/images/sumario/sumario-kenburns.webp" type="image/webp">
+						<img src="assets/images/sumario/sumario-kenburns.jpg" class="img-fluid" alt="Imagem ilustrativa: crianças em atividades lúdicas" />
+					</picture>
+    </div>
+    </div>
+   </div>
+  </div>
+
+  <!--SUMÁRIO-->
+  <div class="row flex-column flex-md-row pt-4" style="background-color:whitesmoke">
+   <div class="col-sm-12 col-md-5 offset-md-1">
+    <div class="sumario-chamada">
+					<a href="cemapi.html">
+      <picture class="sumario-destaques">
+       <source srcset="assets/images/sumario/cemapi.webp" type="image/webp">
+       <img class="d-block w-100" src="assets/images/sumario/cemapi.jpg" alt="Foto ilustrativa">
+      </picture>
+     </a>
+    <p class="sumario-titulo"><a href="cemapi.html">Propostas éticas, práticas e coesas para os desafios brasileiros</a></p>
+    <p class="texto-sumario"><a href="cemapi.html">Centro de Estudos do IPM reúne representantes de diferentes setores a fim de contribuir com as políticas públicas.</a></p>
+				</div>
+   </div>
+   <div class="col-sm-12 col-md-5">
+    <div class="sumario-chamada">
+					<a href="vidro.html">
+      <picture class="sumario-destaques">
+       <source srcset="assets/images/sumario/vidro.webp" type="image/webp">
+       <img class="d-block w-100" src="assets/images/sumario/vidro.jpg" alt="Foto ilustrativa">
+      </picture>
+     </a>
+    <p class="sumario-titulo"><a href="vidro.html">Inovação em fachadas: peles de vidro</a></p>
+    <p class="texto-sumario"><a href="vidro.html">Professora da FAU analisa impacto da luz natural na economia de energia dos edifícios e ritmo circadiano de seus ocupantes; solução pode render patente
+.</a></p>
+    </div>
+   </div>
+  </div>
+
+  <div class="row flex-column flex-md-row" style="background-color:whitesmoke">
+   <div class="col-sm-12 col-md-5 offset-md-1">
+    <div class="sumario-chamada">
+					<a href="pesquisa.html">
+      <picture class="sumario-destaques">
+       <source srcset="assets/images/sumario/pesquisa.webp" type="image/webp">
+       <img class="d-block w-100" src="assets/images/sumario/pesquisa.jpg" alt="Foto ilustrativa">
+      </picture>
+     </a>
+    <p class="sumario-titulo"><a href="pesquisa.html">A mais admirada de São Paulo, pela terceira vez</a></p>
+    <p class="texto-sumario"><a href="pesquisa.html">Paulistanos colocam a UPM no topo da pesquisa elaborada pela <i>Folha de S.Paulo</i> e pelo Datafolha.</a></p>
+				</div>
+   </div>
+   <div class="col-sm-12 col-md-5">
+    <div class="sumario-chamada">
+					<a href="revista.html">
+      <picture class="sumario-destaques">
+       <source srcset="assets/images/sumario/revista.webp" type="image/webp">
+       <img class="d-block w-100" src="assets/images/sumario/revista.jpg" alt="Foto ilustrativa">
+      </picture>
+     </a>
+    <p class="sumario-titulo"><a href="revista.html">Chegamos ao nº 100</a></p>
+    <p class="texto-sumario"><a href="revista.html">A Revista Mackenzie completa 24 anos de circulação ininterrupta, sempre se modernizando para acompanhar as transformações no perfil de seu público leitor.</a></p>
+    </div>
+   </div>
+  </div>
+
+  <div class="row flex-column flex-md-row" style="background-color:whitesmoke">
+   <div class="col-sm-12 col-md-5 offset-md-1">
+    <div class="sumario-chamada">
+					<a href="lupa.html">
+      <picture class="sumario-destaques">
+       <source srcset="assets/images/sumario/lupa.webp" type="image/webp">
+       <img class="d-block w-100" src="assets/images/sumario/lupa.jpg" alt="Foto ilustrativa">
+      </picture>
+     </a>
+    <p class="sumario-titulo"><a href="lupa.html">Na Lupa</a></p>
+    <p class="texto-sumario"><a href="lupa.html">Um espaço para divulgação da pesquisa científica desenvolvida na Universidade Presbiteriana Mackenzie.</a></p>
+				</div>
+   </div>
+   <div class="col-sm-12 col-md-5">
+    <div class="sumario-chamada">
+					<a href="chancelaria.html">
+      <picture class="sumario-destaques">
+       <source srcset="assets/images/sumario/chancelaria.webp" type="image/webp">
+       <img class="d-block w-100" src="assets/images/sumario/chancelaria.jpg" alt="Foto ilustrativa">
+      </picture>
+     </a>
+    <p class="sumario-titulo"><a href="chancelaria.html">Chancelaria</a></p>
+    <p class="texto-sumario"><a href="chancelaria.html">Fique por dentro das mais recentes realizações da Chancelaria do Mackenzie.</a></p>
+    </div>
+   </div>
+  </div>
+
+  <div class="row flex-column flex-md-row pb-4" style="background-color:whitesmoke">
+   <div class="offset-md-1 col-md-10">
+    <div class="row">
+     <div class="col-sm-12 col-md-4">
+      <div class="sumario-chamada sumario-destaques">
+       <a href="ed-marketing.html">
+        <picture>
+         <source srcset="assets/images/sumario/ed-marketing.webp" type="image/webp">
+         <img class="d-block w-100" src="assets/images/sumario/ed-marketing.jpg" alt="Foto ilustrativa">
+        </picture>
+       </a>
+       <p class="sumario-titulo editoriais"><a href="ed-marketing.html">Editorial</a></p>
+       <p class="texto-sumario editoriais"><a href="ed-marketing.html">Excelência e inovação presentes ao longo de 100 edições</a></p>
+      </div>
+     </div>
+     <div class="col-sm-12 col-md-4">
+      <div class="sumario-chamada sumario-destaques">
+       <a href="ed-chanceler.html">
+        <picture>
+         <source srcset="assets/images/sumario/ed-chanceler.webp" type="image/webp">
+         <img class="d-block w-100" src="assets/images/sumario/ed-chanceler.jpg" alt="Foto ilustrativa">
+        </picture>
+       </a>
+       <p class="sumario-titulo editoriais"><a href="ed-chanceler.html">Palavra do Chanceler</a></p>
+       <p class="texto-sumario editoriais"><a href="ed-chanceler.html">Jesus Cristo está vivo, nossa fonte eterna de esperança</a></p>
+      </div>
+     </div>
+     <div class="col-sm-12 col-md-4">
+      <div class="sumario-chamada sumario-destaques">
+       <a href="acontece-abre.html">
+        <picture>
+         <source srcset="assets/images/sumario/acontece.webp" type="image/webp">
+         <img class="d-block w-100" src="assets/images/sumario/acontece.jpg" alt="Foto ilustrativa">
+        </picture>
+       </a>
+       <p class="sumario-titulo editoriais"><a href="acontece-abre.html">Acontece</a></p>
+       <p class="texto-sumario editoriais"><a href="acontece-abre.html">Notícias e eventos que agitam a instituição</a></p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <!--EXPEDIENTE-->
+  <div class="row flex-column flex-md-row pt-2 pb-5 ps-2 pe-2 mt-0" style="background-color: #600000;">
+   <div class="col-sm-12 col-md-3">
+    <p class="expediente-revista-mackenzie">Revista Mackenzie Digital</p>
+    <p class="expediente-edicao">Edição 100 (abril 2023)</p>
+    <p class="expediente-texto">Matrícula nº 444.001/2002, no 4º Registro de Títulos e Documentos – São Paulo. ISSN 15199657</p>
+    <p class="expediente-funcao">INSTITUTO PRESBITERIANO MACKENZIE</p>
+    <p class="expediente-funcao">Presidente</p>
+    <p class="expediente-texto">Milton Flávio Moura</p>
+    <p class="expediente-funcao">Diretor de Educação</p>
+    <p class="expediente-texto">José Paulo Fernandes Jr.</p>
+    <p class="expediente-funcao">Diretor de Estratégia e Negócios</p>
+    <p class="expediente-texto">André Ricardo de Almeida Ribeiro</p>
+    <p class="expediente-funcao">Diretor de Finanças</p>
+    <p class="expediente-texto">Denys Cornélio Rosa</p>
+    <p class="expediente-funcao">Diretor de Saúde e Faculdades</p>
+    <p class="expediente-texto">Luiz Roberto Martins Rocha</p>
+   </div>
+   <div class="col-sm-12 col-md-3">
+    <p class="expediente-funcao">CHANCELARIA</p>
+    <p class="expediente-funcao">Chanceler do Mackenzie</p>
+    <p class="expediente-texto">Robinson Grangeiro Monteiro</p>
+    <p class="expediente-texto-2">www.mackenzie.br</p>
+    <p class="expediente-texto-2">Entidade filantrópica recadastrada no CNAS conforme resolução 096/95</p>
+    <p class="expediente-funcao">Superintendente</p>
+    <p class="expediente-texto">Daniel Grandolfo</p>
+    <p class="expediente-texto-2">Rua Piauí, 130, prédio 47, 2º&nbsp;andar – São Paulo – SP</p>
+    <p class="expediente-texto">Tel (11) 2114-8149</p>
+    <p class="expediente-texto">imprensa@mackenzie.br</p>
+   </div>
+   <div class="col-sm-12 col-md-3">
+    <p class="expediente-funcao">Jornalista Responsável<br>
+    e Editora</p>
+    <p class="expediente-texto">Déspina Nogueira – MTb 26.571</p>
+    <p class="expediente-funcao">Apoio Editorial</p>
+    <p class="expediente-texto">Marcel Mendes</p>
+    <p class="expediente-funcao">PRODUÇÃO (Texto e Arte)</p>
+    <p class="expediente-texto">Ricardo Viveiros & Associados<br>
+    – Oficina de Comunicação</p>
+    <p class="expediente-funcao">Direção Editorial</p>
+    <p class="expediente-texto">Ricardo Viveiros – MTb. 18.141</p>
+    <p class="expediente-funcao">Coordenação</p>
+    <p class="expediente-texto">Ada Caperuto</p>
+    <p class="expediente-funcao">Redação</p>
+    <p class="expediente-texto">Ada Caperuto, Camila Lippi, Eduardo Barbosa, Eudes Lima, Giovanna Mendes Casteluchi, Isabelle Taranha, Jonathas Cotrim, Laura de Araujo, Lilian Mendes, Renan de Simone e Thais Cruz Santos</p>
+   </div>
+   <div class="col-sm-12 col-md-3">
+    <p class="expediente-funcao">Direção de Arte<br>
+    e Diagramação</p>
+    <p class="expediente-texto">Cesar Mangiacavalli</p>
+    <p class="expediente-texto">João Carlos de Pinho</p>
+    <p class="expediente-funcao">Revisão</p>
+    <p class="expediente-texto">Fernanda Mizioka</p>
+    <p class="expediente-texto-2">Artigos assinados são de responsabilidade dos respectivos autores. Autoriza-se a reprodução de textos e fotos desde que, obrigatoriamente, citando a fonte.</p>
+   </div>
+  </div>
+
+  <!--RODAPÉ-->
+  <div class="row">
+   <div class="col">
+    <div id="rodape" class="row mt-0">
+     <div class="d-none d-md-block col-md-4 px-0">
+      <div id="rodape-redes">
+       <p class="rodapes-redes-sociais">Mackenzie nas redes sociais</p><a href="https://www.facebook.com/mackenzie1870/" target="_blank"><img class="icones-de-compartilhamento" src="assets/images/aaa-rodape/facebook.png" alt=""></a> <a href="https://twitter.com/Mackenzie1870" target="_blank"><img class="icones-de-compartilhamento" src="assets/images/aaa-rodape/twitter.png" alt=""></a> <a href="https://www.youtube.com/c/Mackenzie1870" target="_blank"><img class="icones-de-compartilhamento" src="assets/images/aaa-rodape/youtube.png" alt=""></a> <a href="https://www.linkedin.com/company/universidade-presbiteriana-mackenzie?trk=edu-cp-sa-cname" target="_blank"><img class="icones-de-compartilhamento" src="assets/images/aaa-rodape/linkedin.png" alt=""></a> <a href="https://www.instagram.com/mackenzie1870/" target="_blank"><img class="icones-de-compartilhamento" src="assets/images/aaa-rodape/instagram.png" alt=""></a>
+      </div>
+     </div>
+     <div class="d-none d-md-block col-md-4">
+      <div id="rodape-portal">
+       <p class="rodapes-redes-sociais">Portal do Mackenzie</p><a href="http://mackenzie.br/" target="_blank"><img class="icones-de-compartilhamento" src="assets/images/aaa-rodape/mackenzie.png" alt=""></a>
+      </div>
+     </div>
+     <div class="col-md-4">
+      <div id="rodape-compartilhe">
+       <p class="rodapes-redes-sociais">Compartilhe esta página</p><a id="facebook-compartilhar"></a> <a id="twitter-compartilhar"></a> <a id="linkedin-compartilhar"></a> <a id="whatsapp-compartilhar"></a> 
+       <script>
+
+
+                                document.getElementById("facebook-compartilhar").innerHTML = '<a href="https://www.facebook.com/sharer/sharer.php?u=' + decodeURI(window.location.href) + '" target="_blank" alt="Compartilhar no Facebook" title="Compartilhar no Facebook"><img src="assets/images/aaa-rodape/compartilhar-facebook.png" class="icones-de-compartilhamento" alt=""/><\/a>';
+                                document.getElementById("twitter-compartilhar").innerHTML = '<a href="https://twitter.com/share?text=Confira%20na%20' + document.title + '&url=' + decodeURI(window.location.href) + '" target="_blank" alt="Compartilhar no Twitter" title="Compartilhar no Twitter"><img src="assets/images/aaa-rodape/compartilhar-twitter.png" class="icones-de-compartilhamento" alt=""/><\/a>';
+                                document.getElementById("linkedin-compartilhar").innerHTML = '<a href="https://www.linkedin.com/shareArticle?mini=true&url=' + decodeURI(window.location.href) + '&title=Confira%20na%20' + document.title + '&summary=Confira%20na%20' + decodeURI(window.location.href) + '&source=' + decodeURI(window.location.href) + '" target="_blank" alt="Compartilhar no Linkedin" title="Compartilhar no Linkedin"><img src="assets/images/aaa-rodape/compartilhar-linkedin.png" class="icones-de-compartilhamento" alt=""/><\/a>';
+                                document.getElementById("whatsapp-compartilhar").innerHTML = '<a href="whatsapp://send?text=' + decodeURI(window.location.href) + '" target="_blank" alt="Compartilhar no WhatsApp+" title="Compartilhar no Whatsapp"><img src="assets/images/aaa-rodape/compartilhar-whatsapp.png" class="icones-de-compartilhamento" alt=""/><\/a>';
+       </script>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"> </script>
+
+</body>
+</html>
